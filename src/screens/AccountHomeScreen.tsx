@@ -2,18 +2,16 @@ import { BaseScreen } from "../screens/bases/BaseScreen"
 import { AccountHead } from "../components/AccountHead"
 import { AccountsList } from "../components/AccountsList"
 import { Box } from "@mui/material"
-import { REQ_ACCOUNT_GET_HOME } from "../managers/AccounHomeManager"
+// import { REQ_ACCOUNT_GET_HOME } from "../managers/AccounHomeManager"
 import BottomMenu from "../components/BottomMenu"
-import { useState } from "preact/hooks"
+// import { useState } from "preact/hooks"
 import TotalBalance from "../components/TotalBalance"
 import AccountCards from "../components/AccountCards"
 
 export const AccountHomeScreen = () => {
-	const [isLoading, setIsLoading] = useState<boolean>(true)
+	// const [isLoading, setIsLoading] = useState<boolean>(true)
 
-	const [accountHomeData] = REQ_ACCOUNT_GET_HOME.useRequest(()=>setIsLoading(false))
-
-	console.log( accountHomeData)
+	// const [accountHomeData] = REQ_ACCOUNT_GET_HOME.useRequest(()=>setIsLoading(false))
 
 
 	return (

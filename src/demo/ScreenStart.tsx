@@ -4,7 +4,6 @@ import { CircleButton } from "../components/CircleButton";
 import { Deposit } from "../assets/icons/Deposit";
 import { Exchange } from "../assets/icons/Exchange";
 import { Send } from "../assets/icons/Send";
-import { AccountsList } from "../components/AccountsList";
 import { Box } from "@mui/material";
 import BottomMenu from "../components/BottomMenu";
 import { REQ_BRIDGE_WINDOW_OPEN } from "../bridge/Bridge";

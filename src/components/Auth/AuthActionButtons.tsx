@@ -2,7 +2,6 @@ import { Box, Button } from "@mui/material"
 import {
 	AUTH_DATA_ACTIVE_STEP,
 	AUTH_DATA_CHANGE_STEP,
-	AUTH_DATA_GET_CURRENT_STEP,
 	AUTH_DATA_PROCESS_BACK_ACTION,
 	AUTH_DATA_PROCESS_NEXT_ACTION
 } from "../../managers/AuthManager"
@@ -38,7 +37,7 @@ export const AuthBackButton = () => {
 }
 
 export const AuthNextButton: React.FC<IAuthActionButtonsProps> = ({ isDisabled }) => {
-	const [isLoading, setIsLoading] = useState(false)
+	// const [isLoading, setIsLoading] = useState(false)
   const [isKeyboardOpen, setIsKeyboardOpen] = useState(false);
 
   const handleInputFocus = () => {
@@ -67,9 +66,9 @@ export const AuthNextButton: React.FC<IAuthActionButtonsProps> = ({ isDisabled }
   }, []);
 
 	const handleAuthNextBtn = async () => {
-		setIsLoading(true)
+		// setIsLoading(true)
 		await AUTH_DATA_PROCESS_NEXT_ACTION.request()
-		setIsLoading(false)
+		// setIsLoading(false)
 	}
 
 	return (

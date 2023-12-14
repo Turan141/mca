@@ -2,8 +2,6 @@ import { Box, Typography } from "@mui/material"
 import { Plus } from "../assets/icons/Plus"
 import { Burger } from "../assets/icons/Burger"
 import { GD } from "../GD"
-import AccountsBalanceStat from "./AccountsBalanceStat"
-import { Spacer } from "./Spacer"
 
 export const AccountHead=()=>{
     return <Box sx={{

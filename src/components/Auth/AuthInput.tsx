@@ -23,7 +23,7 @@ const InputLabel: React.FC<{ label: string }> = ({ label }) => {
 
 export const AuthInput: React.FC<IAuthInputProps> = ({ currentStep }) => {
 	const { id, type, label, icon } = currentStep
-	const { value, onChange, reset } = useAuthInput(id, "")
+	const { value, onChange } = useAuthInput(id, "")
 
 	return (
 		<Box fullWidth mt={2} display='flex' flexDirection='column' alignItems='center'>
